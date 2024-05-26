@@ -52,7 +52,7 @@ function updateSelectedItems(product) {
     }
 
     if (selectedItemsContainer.children.length === 0) {
-        selectedItemsContainer.innerHTML = '<p class="no-items">No items added</p>';
+        selectedItemsContainer.innerHTML = '<p class="no-items">No product added to cart </p>';
     }
 
     updateTotalPrice();
