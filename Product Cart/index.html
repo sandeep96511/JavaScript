@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Product Cart</title>
+</head>
+<body>
+    <div id="switch">
+        <i class="fas fa-sun"></i>
+      </div>
+    <div class="container">
+        <div class="box1">
+            <h2>Product</h2>
+            <div class="product" data-name="Product 1" data-price="100">
+                <span>Product 1</span>
+                <span>100.00</span>
+                <div class="quantity">
+                    <button class="btn-minus">-</button>
+                    <span class="count">0</span>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+            <div class="product" data-name="Product 2" data-price="200">
+                <span>Product 2</span>
+                <span>200.00</span>
+                <div class="quantity">
+                    <button class="btn-minus">-</button>
+                    <span class="count">0</span>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+            <div class="product" data-name="Product 3" data-price="300">
+                <span>Product 3</span>
+                <span>300.00</span>
+                <div class="quantity">
+                    <button class="btn-minus">-</button>
+                    <span class="count">0</span>
+                    <button class="btn-plus">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <h2>Cart</h2>
+            <div class="selected-items">
+                <p class="no-items">Cart is Empty</p>
+            </div>
+            <div class="total-price">
+                Total Price: <span id="total-price">0</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
