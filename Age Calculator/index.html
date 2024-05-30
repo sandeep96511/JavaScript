@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <img src="https://lh6.ggpht.com/wLfwA7MS68Zd2KedA1vCX6-zLqDIUSwBC3W4GzgJaZfOWX2BOlw6mjj0DatL4oII8Q=w300"
+            alt="" />
+        <form id="form" autocomplete="off">
+            <h5>All Must Be In Numbers Other Wise We Cannot Calculate.</h5>
+            <label for="date">
+                Date Of Birth:
+                <input type="text" maxlength="2" size="2" id="date" placeholder="Date" required />
+                <input type="text" maxlength="2" size="2" id="month" placeholder="Month" autocomplete="on" required />
+                <input type="text" maxlength="4" size="4" id="year" placeholder="Year" required />
+            </label>
+
+            <label for="date2">
+                Today's Date:
+                <input type="text" maxlength="2" size="2" id="date2" placeholder="Date" />
+                <input type="text" maxlength="2" size="2" id="month2" placeholder="Month" />
+                <input type="text" maxlength="4" size="4" id="year2" placeholder="Year" />
+            </label>
+
+            <button id="calbtn">Calculate</button>
+
+            <span id="age"></span>
+            <span id="months"></span>
+            <span id="days"></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
