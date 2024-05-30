@@ -2,6 +2,8 @@ const ratings = document.querySelectorAll(".rating");
 const ratingsContainer = document.querySelector(".ratings-container");
 const sendBtn = document.querySelector("#send");
 const panel = document.querySelector("#panel");
+let text_color_sec = document.querySelector(".text-color-sec").children;
+
 
 let selectedRating = "Satisfied";
 
@@ -14,6 +16,8 @@ ratingsContainer.addEventListener("click", (e) => {
 });
 
 sendBtn.addEventListener("click", () => {
+    text_color_sec[0].value = "";
+
   panel.innerHTML = `
         <p class="heart">💖</p>
         <strong>Thank You! </strong>
