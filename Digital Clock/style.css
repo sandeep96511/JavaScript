@@ -31,7 +31,7 @@ body {
 #time .circle svg circle{
   stroke: rgb(2, 2, 2);
   stroke-width: 4;
-  fill: none;
+  fill: transparent;
   transform: translate(5px,5px);
 }
 
@@ -58,15 +58,20 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 10;
+  transition: all 1s;
+
   /* color: var(--clr); */
 }
 .dots::before{
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: var(--clr);
   border-radius: 50%;
+  box-shadow: 0 0 20px var(--clr);
+  transform: translate(-3px,-3px);
 }
 
 h2 {
