@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #2f363e;
+    background: #e9ecef;
 }
 form{
     width: 80%;
@@ -25,7 +25,7 @@ form{
 input{
     margin-right: 8rem;
     margin-left: 1rem;
-    accent-color: rgb(225, 170, 116);
+    accent-color: rgb(151, 127, 102);
     cursor: pointer;
 }
 label{
@@ -50,9 +50,9 @@ img{
 }
 
 button {
-  background-color: #fff000;
+  background-color: #0d0d0d;
   border-radius: 12px;
-  color: #000;
+  color: #fcfcfc;
   cursor: pointer;
   font-weight: bold;
   padding: 10px 15px;
