@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book App</title>
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#8b5cf6"
+              d="M16 3h2v16H5c-1.66 0-3-1.34-3-3V4c0-1.66 1.34-3 3-3h9v14H5c-.55 0-1 .45-1 1s.45 1 1 1h11V3z"
+            />
+          </svg>
+          <h2>Book</h2>
+        </div>
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <button id="redirectButton">
+            Sign Up
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </nav>
+    <div class="login">
+      <div class="login-container">
+        <div class="icon" style="display: flex; justify-content: end">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button id="animated-button" type="submit">Sign Up</button>
+          <div
+            class="options"
+            style="
+              display: flex;
+              justify-content: space-evenly;
+              padding: 0 5rem;
+              margin-top: 1rem;
+            "
+          >
+            <a href="" style="color: blue">SIGN UP</a>
+            <a href="" id="signin">SIGN IN</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./signup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bfe5da5748.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

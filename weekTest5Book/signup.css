@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #745fdd #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d0cbcb;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+.dark {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.dark {
+  scrollbar-color: #506ff8 #111;
+}
+
+.dark::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background-color: #c3c1cc;
+  border: 3px solid #111;
+}
+
+nav .logo {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 49px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgb(71, 71, 232), rgb(227, 101, 227));
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 23px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dark .slider:before {
+  background-color: black;
+}
+
+input:checked + .slider {
+  background-color: #9ad1ff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9ad1ff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#signUpButton {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #4f2ee8;
+  border-radius: 15px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin-left: 1.5rem;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+#signUpButton:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+    rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+    rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+
+#signUpButton:hover {
+  background-color: rgb(212, 203, 76);
+  color: black;
+}
+
+nav {
+  padding: 0.5rem 3rem;
+  margin: 0 2rem;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.411);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.dark nav {
+  background-color: #191b1d;
+}
+
+.dark nav h2 {
+  color: white;
+}
+
+.booksContainer {
+  display: flex;
+}
+
+aside {
+  width: 27%;
+  min-width: 200px;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.dark aside {
+  scrollbar-color: #506ff8 #111;
+}
+
+.dark aside::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.dark aside::-webkit-scrollbar-thumb {
+  background-color: #745fdd;
+  border: 3px solid #111;
+}
+
+body {
+  background-color: #5132e8;
+}
+
+.login {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  text-align: center;
+  width: 400px;
+}
+
+h2 {
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+form input::placeholder {
+  font-weight: 800;
+  color: #000000;
+}
+
+#animated-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 7px;
+}
+
+#animated-button:hover {
+  background-image: linear-gradient(blue, purple);
+}
+
+#signin {
+  text-decoration: none;
+  color: gray;
+}
+
+#signin:hover {
+  color: blue;
+}
+
+.dark input::placeholder {
+  color: rgb(10, 10, 10);
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+input::placeholder {
+  font-weight: 800;
+  color: #000000;
+}
+
+/* @keyframes slideIn {
+  0% {
+    transform: rotate(0.5turn);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(1.6turn);
+    opacity: 1;
+  }
+}
+
+input {
+  animation: slideIn 0.5s ease-in-out;
+} */
